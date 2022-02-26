@@ -41,9 +41,17 @@
 /*----*/
 
 /*About Page*/
+.about {
+  background-image: url("../public/img/teamwork.jpg");
+  background-position: center;
+}
 .about .description {
   font-size: large;
   box-shadow: 0px 5px 10px black;
+}
+
+.shadow {
+  text-shadow: 3px 2px black;
 }
 /*----------*/
 

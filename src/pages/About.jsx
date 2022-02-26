@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="about">
-      <div className="description bg-primary text-light px-5 py-2 mt-5 mb-4 text-justify">
+      <div className="description bg-primary text-light px-4 py-2 mt-5 mb-4 text-justify">
         <h1 className="text-center">About Us</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -19,7 +19,7 @@ const About = () => {
           luxuriosus eodem{" "}
         </p>
       </div>
-      <dl className="text-center">
+      <dl className="shadow text-center text-light">
         <dt>
           <dfn className="h2">Sedulo, inquam, faciam.</dfn>
         </dt>
@@ -35,53 +35,45 @@ const About = () => {
         </dt>
         <dd>Sed tamen intellego quid velit.</dd>
       </dl>
-      <div className="h5 text-justify mb-5">
+
+      <div className="shadow h5 text-light p-5 text-center">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ex quo
-          intellegitur idem illud, solum bonum esse, quod honestum sit, idque
-          esse beate vivere: honeste, id est cum virtute, vivere. Utrum igitur
-          percurri omnem Epicuri disciplinam placet an de una voluptate quaeri,
-          de qua omne certamen est?{" "}
-          <i>Nos paucis ad haec additis finem faciamus aliquando;</i> Nam si
-          quae sunt aliae, falsum est omnis animi voluptates esse e corporis
-          societate. Duo Reges: constructio interrete. Praeterea et appetendi et
-          refugiendi et omnino rerum gerendarum initia proficiscuntur aut a
-          voluptate aut a dolore. Quos quidem tibi studiose et diligenter
-          tractandos magnopere censeo.{" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide ne ista
+          sint Manliana vestra aut maiora etiam, si imperes quod facere non
+          possim. Roges enim Aristonem, bonane ei videantur haec: vacuitas
+          doloris, divitiae, valitudo; At enim, qua in vita est aliquid mali, ea
+          beata esse non potest. Primum cur ista res digna odio est, nisi quod
+          est turpis? Non enim, si malum est dolor, carere eo malo satis est ad
+          bene vivendum. Quod ea non occurrentia fingunt, vincunt Aristonem;
+          Rationis enim perfectio est virtus;{" "}
+        </p>
+
+        <blockquote cite="http://loripsum.net">
+          Duo Reges: constructio interrete.
+        </blockquote>
+      </div>
+
+      <div className="description bg-primary text-light px-4 py-2 mb-4 text-justify">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+          <i>Suo enim quisque studio maxime ducitur.</i>{" "}
+          <i>Quae duo sunt, unum facit.</i> Non ego tecum iam ita iocabor, ut
+          isdem his de rebus, cum L. Indicant pueri, in quibus ut in speculis
+          natura cernitur. Omnia contraria, quos etiam insanos esse vultis.{" "}
+          <i>Aliter homines, aliter philosophos loqui putas oportere?</i>{" "}
+          Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae
+          orationis vitia posuisse contraria. Duo Reges: constructio interrete.
+          Quid, quod res alia tota est?{" "}
         </p>
 
         <p>
-          Vides igitur te aut ea sumere, quae non concedantur, aut ea, quae
-          etiam concessa te nihil iuvent. Et quis a Stoicis et quem ad modum
-          diceretur, tamen ego quoque exponam, ut perspiciamus, si potuerimus,
-          quidnam a Zenone novi sit allatum. Ita fit ut, quanta differentia est
-          in principiis naturalibus, tanta sit in finibus bonorum malorumque
-          dissimilitudo. Primum non saepe, deinde quae est ista relaxatio, cum
-          et praeteriti doloris memoria recens est et futuri atque inpendentis
-          torquet timor? Qui autem voluptate vitam effici beatam putabit, qui
-          sibi is conveniet, si negabit voluptatem crescere longinquitate? Bona
-          autem corporis huic sunt, quod posterius posui, similiora. Quae rursus
-          dum sibi evelli ex ordine nolunt, horridiores evadunt, asperiores,
-          duriores et oratione et moribus.{" "}
-          <b>Tibi hoc incredibile, quod beatissimum.</b> In qua si nihil est
-          praeter rationem, sit in una virtute finis bonorum;{" "}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eo autem
-          voluptas omnium Latine loquentium more ponitur, cum percipitur ea,
-          quae sensum aliquem moveat, iucunditas. Ex quo intellegitur officium
-          medium quiddam esse, quod neque in bonis ponatur neque in contrariis.
-          Modo etiam paulum ad dexteram de via declinavi, ut ad Pericli
-          sepulcrum accederem. Quibus natura iure responderit non esse verum
-          aliunde finem beate vivendi, a se principia rei gerendae peti; Sit,
-          inquam, tam facilis, quam vultis, comparatio voluptatis, quid de
-          dolore dicemus? Nam illud vehementer repugnat, eundem beatum esse et
-          multis malis oppressum. Quis contra in illa aetate pudorem,
-          constantiam, etiamsi sua nihil intersit, non tamen diligat?{" "}
-          <b>Duo Reges: constructio interrete.</b>{" "}
-          <mark>Sed haec omittamus;</mark> Sit ista in Graecorum levitate
-          perversitas, qui maledictis insectantur eos, a quibus de veritate
-          dissentiunt.{" "}
+          Quae hic rei publicae vulnera inponebat, eadem ille sanabat.{" "}
+          <i>Apud ceteros autem philosophos, qui quaesivit aliquid, tacet;</i>{" "}
+          Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur?
+          Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici
+          videtur. Qui-vere falsone, quaerere mittimus-dicitur oculis se
+          privasse; Totum autem id externum est, et quod externum, id in casu
+          est.{" "}
         </p>
       </div>
     </div>

@@ -8,8 +8,6 @@ import Contact from "./pages/Contact";
 import Posts from "./pages/Posts";
 import NoPage from "./pages/NoPage";
 
-//TODO: find why the posts no longer load
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,9 +22,10 @@ class App extends Component {
     };
   }
 
+  //The axios.get() has to be changed once its uploaded to a website
   componentDidMount() {
     axios
-      .get("http://localhost:5000/posts/")
+      .get("http://192.168.0.3:5000/posts/")
       .then((res) => {
         this.setState({ posts: res.data });
       })

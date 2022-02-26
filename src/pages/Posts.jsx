@@ -13,10 +13,15 @@ class Posts extends Component {
       },
     };
   }
-
+  //The axios.get() has to be changed once its uploaded to a website
   componentDidMount() {
     axios
-      .get("http://localhost:5000/" + window.location.href.substring(22))
+      .get(
+        "http://192.168.0.3:5000" +
+          window.location.href.substring(
+            window.location.href.indexOf("3000/") + 4
+          )
+      )
       .then((res) => {
         this.setState({ post: res.data });
       })

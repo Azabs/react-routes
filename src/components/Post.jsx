@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 
+const onClick = (url) => {
+  console.log("onClick handler called by " + url);
+};
+
 const Post = (props) => {
   return (
     <div className="my-4 post">
       <h3 className="title">
-        <Link to={"/posts/" + props.post._id}>
+        <Link
+          to={"/posts/" + props.post._id}
+          onClick={() => onClick(props.post._id)}
+        >
           <b>{props.post.title}</b>
         </Link>
       </h3>
