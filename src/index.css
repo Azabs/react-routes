@@ -55,6 +55,18 @@
 }
 /*----------*/
 
+/*Contact Page*/
+#contact-form input,
+textarea {
+  margin: 1%;
+  width: 100%;
+}
+
+textarea {
+  max-width: 100%;
+}
+/*------------*/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
