@@ -39,7 +39,7 @@ const Contact = () => {
               placeholder="Phone Number"
             />
             <input
-              name="asunto"
+              name="subject"
               required="required"
               type="text"
               placeholder="Subject"

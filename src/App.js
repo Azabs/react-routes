@@ -25,7 +25,7 @@ class App extends Component {
   //The axios.get() has to be changed once its uploaded to a website
   componentDidMount() {
     axios
-      .get("http://192.168.0.3:5000/posts/")
+      .get("http://192.168.0.7:5000/posts/")
       .then((res) => {
         this.setState({ posts: res.data });
       })
