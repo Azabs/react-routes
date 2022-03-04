@@ -9,9 +9,14 @@ const Post = (props) => {
           <b>{props.post.title}</b>
         </Link>
       </h3>
-      <p className="summary text-justify">
-        <Markup content={props.post.content.substring(0, 400) + "..."} />
-      </p>
+      <div className="summary text-justify">
+        <Markup
+          content={
+            props.post.content.substring(0, 400).replace(/<img.+\/>/, "") +
+            "..."
+          }
+        />
+      </div>
       <div className="d-flex justify-content-between">
         <span className="date">{props.post.date.substring(0, 10)}</span>
         <Link to={"/posts/" + props.post._id}>Read More...</Link>

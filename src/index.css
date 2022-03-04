@@ -5,6 +5,7 @@
 
 .heading .img-container {
   background-color: black;
+  position: relative;
 }
 
 .heading img {
@@ -12,12 +13,16 @@
   max-width: 100%;
 }
 
-.heading p {
+.heading .text {
   color: white;
   text-shadow: 2px 1px 2px black;
-  margin: 0% 4%;
   position: absolute;
-  top: 30%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*------*/
 
@@ -37,6 +42,14 @@
 
 .post hr {
   border-top: 2px solid;
+}
+
+.post img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 2%;
 }
 /*----*/
 
@@ -73,29 +86,19 @@ textarea {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .heading p {
-    top: 40%;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .heading p {
-    top: 10%;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .heading p {
-    top: 25%;
+  .post img {
+    width: 60%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .heading p {
-    font-size: large;
-    top: 30%;
-  }
 }
