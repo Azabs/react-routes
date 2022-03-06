@@ -20,7 +20,7 @@ class Posts extends Component {
   componentDidMount() {
     axios
       .get(
-        "http://192.168.0.7:5000" +
+        "http://192.168.0.8:5000" +
           window.location.href.substring(
             window.location.href.indexOf("3000/") + 4
           )
@@ -61,6 +61,16 @@ class Posts extends Component {
             <i className="fab fa-github"></i>
           </a>
         </section>
+      </div>
+    );
+  }
+}
+
+export default Posts;
+
+/*I don't know if I'll end up implementing this feature but for the time being
+  I'll leave this as a comment*/
+/*
         <div className="d-flex justify-content-between">
           <Link to="#" className="btn btn-primary btn-lg btn-block mr-1 my-0">
             prev
@@ -69,9 +79,4 @@ class Posts extends Component {
             next
           </Link>
         </div>
-      </div>
-    );
-  }
-}
-
-export default Posts;
+ */

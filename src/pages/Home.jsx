@@ -9,11 +9,6 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      img: [
-        { name: "window", url: "./img/window.jpg" },
-        { name: "louvre", url: "./img/louvre.jpg" },
-        { name: "city", url: "./img/city.jpg" },
-      ],
       posts: [],
     };
   }
@@ -21,7 +16,7 @@ class Home extends Component {
   //The axios.get() has to be changed once its uploaded to a website
   componentDidMount() {
     axios
-      .get("http://192.168.0.7:5000/posts/")
+      .get("http://192.168.0.8:5000/posts/")
       .then((res) => {
         this.setState({ posts: res.data });
       })
@@ -42,7 +37,12 @@ class Home extends Component {
           {this.state.posts.slice(3, 6).map((p) => {
             return <Post post={p} key={p.title} />;
           })}
-          <Link to="#"> Read more posts...</Link>
+          <br />
+          <Link to="/postsbrowser/1" className="no-u-hover">
+            <h2 className="mb-4 text-center">
+              <u>Read more posts</u>
+            </h2>
+          </Link>
         </div>
       </>
     );
