@@ -3,7 +3,7 @@ import PageNav from "../components/PageNav";
 import axios from "axios";
 import Post from "../components/Post";
 
-//TODO: fix update page when url changes
+//TODO: Make it so that when an invalid URL is written the NoPage page will be shown
 
 class PostsBrowser extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class PostsBrowser extends Component {
 
     this.state = {
       posts: [],
-      currentPage: 1,
+      currentPage: 0,
       firstPostNumber: 0,
       lastPostNumber: 5,
       amountOfPages: 1,
@@ -41,17 +41,50 @@ class PostsBrowser extends Component {
       });
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.currentPage !== this.state.currentPage) {
+      this.updatePageHandler();
+    }
+  }
+
+  componentWillUnmount() {
+    this.setState = (state, callback) => {
+      return;
+    };
+  }
+
+  urlListener() {
+    setInterval(() => {
+      let newpage =
+        window.location.href.substring(
+          window.location.href.indexOf("browser/") + 8
+        ) - 1;
+      if (this.state.currentPage !== Number(newpage))
+        this.setState({ currentPage: newpage });
+    }, 500);
+  }
+
+  updatePageHandler = () => {
+    if (typeof this.state.currentPage === "number") {
+      let first = this.state.currentPage * 5;
+      let last = first + 5;
+      this.setState({ firstPostNumber: first });
+      this.setState({ lastPostNumber: last });
+    }
+  };
+
   changePageHandler = (page) => {
-    let first = page * 5;
-    let last = first + 5;
-    this.setState({ firstPostNumber: first });
-    this.setState({ lastPostNumber: last });
+    this.setState({ currentPage: page });
   };
 
   render() {
     return (
       <>
         <h1>Posts Browser</h1>
+        <PageNav
+          amount={this.state.amountOfPages}
+          onPageChange={this.changePageHandler}
+        />
         <hr />
         <div className="posts-container">
           {this.state.posts
@@ -65,6 +98,7 @@ class PostsBrowser extends Component {
           amount={this.state.amountOfPages}
           onPageChange={this.changePageHandler}
         />
+        {this.urlListener()}
       </>
     );
   }
