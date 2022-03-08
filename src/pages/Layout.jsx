@@ -5,8 +5,8 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <div className="bg-primary">
-        <nav className="navbar navbar-expand navbar-dark container text-light bg-primary justify-content-between">
+      <div className="bg-purple">
+        <nav className="navbar navbar-expand navbar-dark container text-light bg-purple justify-content-between">
           <h2>
             <Link className="text-light nav-link" to="/">
               Site Name
@@ -36,7 +36,7 @@ const Layout = () => {
         <Outlet />
       </div>
 
-      <footer className="container-fluid text-light bg-primary text-center py-2">
+      <footer className="container-fluid text-light bg-purple text-center py-2">
         <p>©2022 Copyright: Agustín Zabalgoitia</p>
       </footer>
     </>

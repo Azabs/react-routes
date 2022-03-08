@@ -24,7 +24,7 @@ class PageNav extends Component {
 
   render() {
     return (
-      <div>
+      <div className={this.props.className}>
         <h3 className="text-center">
           <Link to="/postsbrowser/1" onClick={() => this.props.onPageChange(0)}>
             {"<<"}

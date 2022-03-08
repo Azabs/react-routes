@@ -80,12 +80,11 @@ class PostsBrowser extends Component {
   render() {
     return (
       <>
-        <h1>Posts Browser</h1>
         <PageNav
           amount={this.state.amountOfPages}
           onPageChange={this.changePageHandler}
+          className="mt-4"
         />
-        <hr />
         <div className="posts-container">
           {this.state.posts
             .slice(this.state.firstPostNumber, this.state.lastPostNumber)
@@ -93,10 +92,10 @@ class PostsBrowser extends Component {
               return <Post post={p} key={p.title} />;
             })}
         </div>
-        <hr />
         <PageNav
           amount={this.state.amountOfPages}
           onPageChange={this.changePageHandler}
+          className="mb-4"
         />
         {this.urlListener()}
       </>

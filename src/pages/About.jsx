@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="about">
-      <div className="description bg-primary text-light px-4 py-2 mt-5 mb-4 text-justify">
+      <div className="description bg-purple text-light px-4 py-4 my-3 my-md-4 mb-4 text-justify">
         <h1 className="text-center">About Us</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
@@ -53,7 +53,7 @@ const About = () => {
         </blockquote>
       </div>
 
-      <div className="description bg-primary text-light px-4 py-2 mb-4 text-justify">
+      <div className="description bg-purple text-light px-4 py-4 mb-3 mb-md-4 text-justify">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
           <i>Suo enim quisque studio maxime ducitur.</i>{" "}

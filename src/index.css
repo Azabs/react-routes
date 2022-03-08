@@ -2,7 +2,27 @@
 .no-u-hover:hover {
   text-decoration: none;
 }
+
+.bg-purple {
+  background-color: rgb(100, 41, 112);
+}
 /*---------------*/
+
+/*Body*/
+body {
+  background-color: rgb(31, 30, 30);
+  color: white;
+}
+
+a {
+  color: rgb(174, 103, 189);
+}
+
+a:active,
+a:hover {
+  color: rgb(206, 141, 219);
+}
+/*----*/
 
 /*Heading*/
 .heading {
@@ -34,7 +54,7 @@
 
 /*Post*/
 .post .title a {
-  color: black;
+  color: white;
 }
 
 .post .title a:hover {
@@ -63,6 +83,7 @@
 .about {
   background-image: url("../public/img/teamwork.jpg");
   background-position: center;
+  margin: 0% -5%;
 }
 .about .description {
   font-size: large;
@@ -75,7 +96,7 @@
 /*----------*/
 
 /*Contact Page*/
-#contact-form input,
+.form input,
 textarea {
   margin: 1%;
   width: 100%;

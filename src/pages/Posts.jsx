@@ -45,19 +45,19 @@ class Posts extends Component {
         </div>
         <hr />
         <section className="text-center my-3">
-          <a className="btn btn-link btn-lg text-dark mx-2" href="#!">
+          <a className="btn btn-link btn-lg text-light mx-2" href="#!">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a className="btn btn-link btn-lg text-dark mx-2" href="#!">
+          <a className="btn btn-link btn-lg text-light mx-2" href="#!">
             <i className="fab fa-twitter"></i>
           </a>
-          <a className="btn btn-link btn-lg text-dark mx-2" href="#!">
+          <a className="btn btn-link btn-lg text-light mx-2" href="#!">
             <i className="fab fa-instagram"></i>
           </a>
-          <a className="btn btn-link btn-lg text-dark mx-2" href="#!">
+          <a className="btn btn-link btn-lg text-light mx-2" href="#!">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a className="btn btn-link btn-lg text-dark mx-2" href="#!">
+          <a className="btn btn-link btn-lg text-light mx-2" href="#!">
             <i className="fab fa-github"></i>
           </a>
         </section>
@@ -72,10 +72,10 @@ export default Posts;
   I'll leave this as a comment*/
 /*
         <div className="d-flex justify-content-between">
-          <Link to="#" className="btn btn-primary btn-lg btn-block mr-1 my-0">
+          <Link to="#" className="btn btn-purple btn-lg btn-block mr-1 my-0">
             prev
           </Link>
-          <Link to="#" className="btn btn-primary btn-lg btn-block ml-1 my-0">
+          <Link to="#" className="btn btn-purple btn-lg btn-block ml-1 my-0">
             next
           </Link>
         </div>
